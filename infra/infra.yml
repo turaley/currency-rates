@@ -1,0 +1,10 @@
+version: "2"
+services:
+  currency-db:
+    image: postgres:10.4
+    environment:
+      - POSTGRES_DB=currency
+      - POSTGRES_USER=currency-user
+      - POSTGRES_PASSWORD=passw0rd
+    ports:
+    - 5432:5432

@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    platform: postgres
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/currency
+    username: currency-user
+    password: passw0rd
+  liquibase:
+    change-log: "classpath:db/changelog/master.xml"
+  jpa:
+    hibernate:
+      ddl-auto: create
